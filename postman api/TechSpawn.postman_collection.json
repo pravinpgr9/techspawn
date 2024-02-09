@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "d1c584c8-aa32-48b5-8360-e608ba88435d",
+		"name": "TechSpawn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1010044"
+	},
+	"item": [
+		{
+			"name": "Employee List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/techspawn/index.php?action=view&apiKey=123456789",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"techspawn",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "view"
+						},
+						{
+							"key": "apiKey",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Emily",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Brown",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "emily.789@example.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "444-222-3333",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "321 Pine St, City, Country",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "Marketing",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "Marketing Specialist",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "58000.00",
+							"type": "text"
+						},
+						{
+							"key": "hire_date",
+							"value": "2023-02-05",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/techspawn/index.php?action=add&apiKey=123456789",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"techspawn",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "add"
+						},
+						{
+							"key": "apiKey",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "44Emily",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "55Brown",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "emily.1133@example.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "444-222-3333",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "321 Pine St, City, Country",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "Marketing",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "Marketing Specialist",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "58000.00",
+							"type": "text"
+						},
+						{
+							"key": "hire_date",
+							"value": "2023-02-05",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "152",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/techspawn/index.php?action=update&apiKey=123456789",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"techspawn",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "update"
+						},
+						{
+							"key": "apiKey",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/techspawn/index.php?action=edit&id=15&apiKey=123456789",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"techspawn",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "edit"
+						},
+						{
+							"key": "id",
+							"value": "15"
+						},
+						{
+							"key": "apiKey",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/techspawn/index.php?action=delete&id=190",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"techspawn",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "delete"
+						},
+						{
+							"key": "id",
+							"value": "190"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
